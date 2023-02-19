@@ -1,0 +1,25 @@
+//import de los scss
+@import "bases/extender";
+@import "bases/mixin";
+@import "bases/variables";
+/*lugares en mapa*/
+.mapa {   
+    @include center;
+    color: $color-secundario;
+}
+    .lugares{
+        color: $color-principal;
+        } 
+h4{
+    background-color: $color-extra;
+}
+/*medias tablet*/
+@media (max-width: 992px){
+}
+/*medias cel*/
+@media (max-width: 768px){
+    .logo { @include no;
+}
+    .mapaimg { @include no;
+    }
+}

@@ -1,0 +1,34 @@
+//import de los scss
+@import "bases/extender";
+@import "bases/mixin";
+@import "bases/variables";    
+    /*pagina redes*/
+    h5{
+        text-align: center;
+        font-size: 300%;
+        font-style: italic;
+        a{
+            text-decoration: none;
+        }
+    }
+    h5:hover{
+        transform: scale(1.2);
+        transition: 3s;
+        text-shadow: 2px 2px 5px red;
+    }
+    /*medias tablet*/
+        @media (max-width: 992px){
+            h5:hover{ 
+                transform: none;
+                transition: none;
+                text-shadow: none;
+            }
+        }
+
+        
+    /*medias cel*/
+        @media (max-width: 768px){
+            .logo { @include no;
+            }
+        }
+

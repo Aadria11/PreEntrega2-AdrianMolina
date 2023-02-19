@@ -1,0 +1,30 @@
+//import de los scss
+@import "bases/extender";
+@import "bases/mixin";
+@import "bases/variables";
+
+/*detalles del index*/
+.text-center{
+    color: $color-secundario
+    }
+.presentacionimg{
+    @include center;
+    }
+    /*videos intros*/
+    .video{
+        @include flex
+        }
+        .videos{ 
+            margin-left: 1rem;
+            margin-right: 1rem; 
+        }
+        /*medias tablet*/
+        @media (max-width: 992px){
+        }
+        /*medias cel*/
+        @media (max-width: 768px){
+            .logo { @include no;
+        }
+        .videos{ @include no;
+        }
+        }

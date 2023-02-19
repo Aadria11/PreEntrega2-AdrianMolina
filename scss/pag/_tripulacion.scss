@@ -1,0 +1,87 @@
+//import de los scss
+@import "bases/extender";
+@import "bases/mixin";
+@import "bases/variables";
+/* tripulacion*/
+    .texto-trippulacion{
+        text-align: center;
+        color: $color-secundario;
+    }
+
+/*organizacion pag otros*/
+.tripulacion{
+   color: $color-principal;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "pji1  pji2"
+    "pjt1  pjt2"
+    "pji3  pji4"
+    "pjt3  pjt4"
+    "pji5  pji6"
+    "pjt5  pjt6"
+    "pji7  pji8"
+    "pjt7  pjt8"  ;
+    justify-content: center;
+    justify-items: center;
+}
+    .pji1{
+        grid-area: pji1
+    }
+    .pjt1{
+        grid-area: pjt1
+    }
+    .pji2{
+        grid-area: pji2
+    }
+    .pjt2{
+        grid-area: pjt2
+    }
+    .pji3{
+        grid-area: pji3
+    }
+    .pjt3{
+        grid-area: pjt3
+    }       
+    .pji4{
+        grid-area: pji4
+    }
+    .pjt4{
+        grid-area: pjt4
+    }
+    .pji5{
+        grid-area: pji5
+    }
+    .pjt5{
+        grid-area: pjt5
+    }
+    .pji6{
+        grid-area: pji6
+    }
+    .pjt6{
+        grid-area: pjt6
+    }
+    .pji7{
+        grid-area: pji7
+    }
+    .pjt7{
+        grid-area: pjt7
+    }.pji8{
+        grid-area: pji8
+    }
+    .pjt8{
+        grid-area: pjt8
+    }
+    /*medias tablet*/
+    @media (max-width: 992px){
+    }
+    /*medias cel*/ 
+    @media (max-width: 768px){
+        .logo { @include no;
+    }
+    .tripulacion {
+        display: block;
+    }
+}

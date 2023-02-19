@@ -1,0 +1,73 @@
+//import de los scss
+@import "bases/extender";
+@import "bases/mixin";
+@import "bases/variables";
+/*texto otros*/
+.texto-otros {
+    text-align: center;
+    color: $color-secundario;
+} 
+
+/*organizacion pagina otros*/ 
+.npc{
+    display: grid;
+       grid-template-columns: auto;
+       grid-template-rows: auto;
+       grid-row-gap: 10px;
+       grid-column-gap: 10px;
+
+
+       grid-template-areas:
+       "nf1 nt1"
+       "nf2 nt2"
+       "nf3 nt3"
+       "nf4 nt4"
+       "nf5 nt5"
+       "nf6 nt6";}
+
+       .nf1{
+        grid-area: nf1
+    }
+    .nt1{
+        grid-area: nt1
+    }
+    .nf2{
+        grid-area: nf2
+    }
+    .nt2{
+        grid-area: nt2
+    }
+    .nf3{
+        grid-area: nf3
+    }
+    .nt3{
+        grid-area: nt3
+    }
+    .nf4{
+        grid-area: nf4
+    }
+    .nt4{
+        grid-area: nt4
+    }
+    .nf5{
+        grid-area: nf5
+    }
+    .nt5{
+        grid-area: nt5
+    }
+    .nf6{
+        grid-area: nf6
+    }
+    .nt6{
+        grid-area: nt6
+    }
+    /*medias tablet*/
+    @media (max-width: 992px){
+    }
+    /*medias cel*/
+    @media (max-width: 768px){
+        .logo { @include no;
+    }
+    .npc{display: block; 
+    } 
+    }

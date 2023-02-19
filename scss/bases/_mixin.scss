@@ -1,0 +1,13 @@
+//mixin para flex
+
+@mixin flex{        
+    display: block;
+    display: flex;}
+
+@mixin center{        
+    align-items: center;
+}
+
+@mixin no{
+    display: none;
+}

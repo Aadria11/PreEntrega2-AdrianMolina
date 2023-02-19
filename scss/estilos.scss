@@ -1,0 +1,80 @@
+//import de los scss
+@import "bases/extender";
+@import "bases/mixin";
+@import "bases/variables";
+@import "pag/redes";
+@import "pag/inicio";
+@import "pag/mapa";
+@import "pag/otros";
+@import "pag/tripulacion";
+
+/*reset*/
+*{margin: 0;
+    box-sizing: border-box;
+}
+/* body*/
+body{
+    background-image: url(../img/paisaje.jpg);
+}
+/* titulo para todos*/
+h1{
+    color: $color-principal;
+    background-image: linear-gradient(gold, rgb(96, 82, 3));
+    text-align: center;
+    font-size: 300%;
+    font-style: oblique;
+
+}
+/* menu*/
+nav{
+    background-image: linear-gradient(blueviolet, rgb(47, 13, 79));
+    padding-top:0px;
+    padding-left: 0px;
+    ul{
+        li{
+            font-style: italic;
+            list-style: none;
+            margin-left: 05px;
+            display: inline-block;
+            width: 300px;
+
+            a{
+                text-decoration: none;
+        }
+    }
+}}
+  /*trasnformaciones al menu*/
+    nav ul li:hover{
+        transform: scale(1.1);
+         transition: 3s;
+        text-shadow: 5px 5px 10px whitesmoke;
+ }
+//section de las paginas
+/*section*/
+section {
+    @extend %section;
+    background-color: $color-tercero;
+}
+//logo movil en las paginas
+/*logo movil*/
+.logo {
+    @extend %logo;
+}
+
+//footer paginas
+/*footer*/
+footer{
+    background-color: $color-principal;
+}
+/*medias tablet*/
+@media (max-width: 992px){    
+    nav ul li:hover{ 
+    transform: none;
+    transition: none;
+    text-shadow: none;
+}
+}
+/*medias cel*/
+@media (max-width: 768px){
+
+}

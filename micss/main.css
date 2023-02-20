@@ -80,6 +80,7 @@ section {
   .videos {
     display: none; } }
 
+/*logo movil*/
 section {
   margin-left: 10%;
   margin-right: 10%;
@@ -282,7 +283,8 @@ h1 {
 nav {
   background-image: linear-gradient(blueviolet, #2f0d4f);
   padding-top: 0px;
-  padding-left: 0px; }
+  padding-left: 0px;
+  /*trasnformaciones al menu*/ }
   nav ul li {
     font-style: italic;
     list-style: none;
@@ -291,18 +293,15 @@ nav {
     width: 300px; }
     nav ul li a {
       text-decoration: none; }
-
-/*trasnformaciones al menu*/
-nav ul li:hover {
-  transform: scale(1.1);
-  transition: 3s;
-  text-shadow: 5px 5px 10px whitesmoke; }
+  nav nav ul li:hover {
+    transform: scale(1.1);
+    transition: 3s;
+    text-shadow: 5px 5px 10px whitesmoke; }
 
 /*section*/
 section {
   background-color: #246342; }
 
-/*logo movil*/
 /*footer*/
 footer {
   background-color: #5a0462; }

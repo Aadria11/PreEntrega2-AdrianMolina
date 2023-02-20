@@ -28,3 +28,7 @@
         .videos{ @include no;
         }
         }
+        /*logo movil*/
+.logo {
+    @extend %logo;
+}

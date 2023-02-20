@@ -42,24 +42,21 @@ nav{
                 text-decoration: none;
         }
     }
-}}
+}
+    
   /*trasnformaciones al menu*/
     nav ul li:hover{
         transform: scale(1.1);
          transition: 3s;
         text-shadow: 5px 5px 10px whitesmoke;
- }
+ }}
 //section de las paginas
 /*section*/
 section {
     @extend %section;
-    background-color: $color-tercero;
+    background-color: $color-tercero;    
 }
-//logo movil en las paginas
-/*logo movil*/
-.logo {
-    @extend %logo;
-}
+
 
 //footer paginas
 /*footer*/

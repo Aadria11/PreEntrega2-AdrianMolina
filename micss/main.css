@@ -21,21 +21,21 @@ section {
   right: 50px; }
 
 /*pagina redes*/
-h5 {
+.redes {
   text-align: center;
-  font-size: 300%;
+  font-size: 150%;
   font-style: italic; }
-  h5 a {
+  .redes a {
     text-decoration: none; }
 
-h5:hover {
+.redes:hover {
   transform: scale(1.2);
   transition: 3s;
   text-shadow: 2px 2px 5px red; }
 
 /*medias tablet*/
 @media (max-width: 992px) {
-  h5:hover {
+  .redes:hover {
     transform: none;
     transition: none;
     text-shadow: none; } }

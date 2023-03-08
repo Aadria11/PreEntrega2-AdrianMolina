@@ -269,7 +269,10 @@ section {
 
 /* body*/
 body {
-  background-image: url(../img/paisaje.jpg); }
+  background-image: url(../img/paisaje.jpg);
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto; }
 
 /* titulo para todos*/
 h1 {
